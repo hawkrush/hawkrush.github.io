@@ -14,7 +14,6 @@ main {
    *  Moved opacity and z-index from .bv-video-wrap::before to here
    */
   opacity: 0.2;
-  z-index: 0;
 }
 
 .bv-video-wrap--ready {
@@ -32,6 +31,7 @@ main {
   left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
 }
 
 /* Video object */
