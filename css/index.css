@@ -29,6 +29,10 @@ section {
 	color: #1a1a1a;
 }
 
+#navbar-nav-adjustment {
+	width: 113.61px;
+}
+
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link,
 .navbar .navbar-nav .nav-item .nav-link {
 	color: #e5e5e5;
@@ -50,23 +54,28 @@ section {
 	background-color: #0d0d0d;
 }
 
-#navbar-secondary-links {
-	display: flex!;
+#navbar-primary-links, #navbar-secondary-links {
+	margin: 0% 10% 0% 10%;
+	display: flex!important;
 	flex-basis: auto;
 	flex-grow: 1;
 }
 
 @media (max-width: 575px) {
+	#navbar-nav-adjustment {
+		width: 68.88;	
+	}
+
 	.navbar .navbar-collapse .navbar-nav .nav-item .nav-link,
 	.navbar .navbar-nav .nav-item .nav-link {
 		font-weight: 300;
 		font-size: 15px;
 	}
-	#navbar-secondary-links {
+	/*#navbar-secondary-links {
 		display: block;
 		flex-basis: 100%;
 		flex-grow: 1;
-	}
+	}*/
 }
 
 
@@ -106,6 +115,12 @@ section {
 	font-size: 30px;
 	text-align: center;
 	color: black;
+}
+
+@media (max-width: 575px) {
+	.sbfp-title .container {
+		font-size: 20px;
+	}
 }
 
 /* Section: Videos */
@@ -279,4 +294,11 @@ section {
 
 .developed-by-text {
 	color: #e5e5e5;
+}
+
+@media (max-width: 575px) {
+	.developed-by-text {
+		font-weight: 400;	
+		font-size: 13px;
+	}
 }
