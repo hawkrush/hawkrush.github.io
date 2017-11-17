@@ -103,16 +103,16 @@ jQuery(document).ready(function(){
         screenquery:{
 	tablet: {
 		screenwidth: 900,
-		visibleitems: 3
-	},
-	largemobile: {
-		screenwidth: 600,
 		visibleitems: 2
 	},
+	mobile: {
+		screenwidth: 600,
+		visibleitems: 1
+	}/*,
 	smallmobile: {
 		screenwidth: 300,
 		visibleitems: 1
-	}
+	}*/
 },
         navwidth:16,
         loop:0,

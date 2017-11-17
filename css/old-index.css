@@ -21,88 +21,39 @@ section {
 }
 */
 
-.sbfp-navbar-primary {
-	border-bottom: 0px solid #1a1a1a;
-}
-
-.sbfp-navbar-item:hover {
-	color: #1a1a1a;
-}
-
-.navbar .navbar-collapse .navbar-nav .nav-item .nav-link,
-.navbar .navbar-nav .nav-item .nav-link {
-	color: #e5e5e5;
-	font-weight: 500;
-	font-size: 20px;
-	float: center;
-}
-
-.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover,
-.navbar .navbar-nav .nav-item .nav-link:hover {
-	color: #b3b3b3;
-}
-
-.navbar-custom-primary {
-	background-color: #0d0d0d;
-}
-
-.navbar-custom-secondary {
-	background-color: #0d0d0d;
-}
-
-#navbar-secondary-links {
-	display: flex!;
-	flex-basis: auto;
-	flex-grow: 1;
-}
-
-@media (min-width: 575px) {
-	.navbar .navbar-collapse .navbar-nav .nav-item .nav-link,
-	.navbar .navbar-nav .nav-item .nav-link {
-		font-weight: 300;
-		font-size: 15px;
-	}
-	#navbar-secondary-links {
-		display: block;
-		flex-basis: 100%;
-		flex-grow: 1;
-	}
-}
-
-
 /* Title */
 .sbfp-title {
-	position: fixed;
+	position: relative;
 	width: 100%;
-	height: 30%;
-	top: 20%;
+	height: 100%;
+	top: 0%;
 	float: center;
 	margin: 0;
 	padding: 0px 0px;
 	letter-spacing: 2px;
 	overflow: hidden;
-	z-index: -1;
+	z-index: 1;
 	border: 0px solid transparent;
 }
 
 .sbfp-title-text {
 	text-transform: uppercase;
-	/*font-weight: 700;
-	font-size: 70px;*/
-	color: #ff9900; /*#ff9900;*/
+	font-weight: 700;
+	font-size: 70px;
+	color: #ff9900;/*#e5e5e5;*/ /*black;*/
 }
 
-.sbfp-title-bg {
+.sbfp-title .sbfp-title-bg {
 	position: absolute;
-	top: 0%;
-	left: 0%;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 0;
 }
 
 .sbfp-title .container {
 	position: relative;
+	margin-top: 200px;
 	font-size: 30px;
 	text-align: center;
 	color: black;
@@ -126,33 +77,24 @@ section {
         /*font-family: 'Open Sans', sans-serif;*/
 	font-weight: 700;
 	font-size: 60px;
+	margin: 0px 0px 0px 0px;
 	/*float: left;*/
+	float: left;
 }
 
 .sbfp-newest-uploaded {
-	position: fixed;
-	top: 45%;
-	width: 100%;
-	height: 45%;
-	z-index: 0;
-	/*border-right: 75px solid transparent;
-	border-left: 75px solid transparent;*/
+	position: relative;
+	/*margin: 3% 14% 0% 14%;*/
+	border-top: 0px solid transparent;
+	border-right: 50px solid #1a1a1a;/*darkest gray*/
+	border-bottom: 0px solid transparent;
+	border-left: 50px solid #0d0d0d;
 }
 
 .sbfp-newest-uploaded-bg {
-	position: relative;
-	height: 100%;
-	margin: 0% 17% 0% 17%;
-	/*background: #0d0d0d;*/
+	background: #333333;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
-	-webkit-filter: brightness(40%);
-	transition: 0.2s;
-}
-
-.sbfp-newest-uploaded-bg:hover {
-	-webkit-filter: brightness(100%);
-	transition: 0.2s;
 }
 
 .newest-uploaded-text, .carousel-video-text,
@@ -160,26 +102,33 @@ section {
 	color: #ff9900;/*#c3c3c3;*/
 }
 
-.carousel-video-text {
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 500;
-	font-size: 15px;
-	color: #e5e5e5;
+.sbfp-newest-uploaded-bg-color {
+	/*background-color: #FF8C00;*/
+	background-color: transparent;
+	filter: brightness(50%);
 }
 
-/*
+.sbfp-newest-uploaded-bg-color:hover {
+	filter: brightness(100%);
+	/*background-color: yellow;*/
+}
+
+.carousel-video-text {
+	font-weight: 600;
+	font-size: 20px;
+}
+
 .sbfp-lps {
 	position: relative;
+	/*margin: 2% 14% 0% 14%;*/
 	border-top: 0px solid transparent;
 	border-right: 50px solid #0d0d0d;
 	border-bottom: 0px solid transparent;
 	border-left: 50px solid #0d0d0d;	
 }
-*/
 
-.sbfp-lps {
-	background: #1a1a1a; /*#333333;*/
-	z-index: 20;
+.sbfp-lps-bg {
+	background: transparent; /*#333333;*/
 }
 
 .lps-mini-gallery {
@@ -187,7 +136,7 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 0% 0% 0% 0%;/*margin: 6% 0% 2% 0%;*/
+	margin: 2% 0% 2% 0%;/*margin: 6% 0% 2% 0%;*/
 }
 
 .lps-grid {
@@ -205,7 +154,7 @@ section {
 .lps-grid-image-textbox {
 	display: inline;
 	/*height: 100%;*/
-	width: 25%;
+	width: 33.2%;	
 }
 
 .lps-grid-image-textbox:hover {
@@ -215,14 +164,11 @@ section {
 .lps-grid-image {
 	position: relative;
 	width: 100%;
-	-webkit-filter: brightness(40%);
-	transition: 0.2s
-
+	filter: brightness(40%);
 }
 
 .lps-grid-image:hover {
-	-webkit-filter: brightness(100%);
-	transition: 0.2s;
+	filter: brightness(100%);
 	/*opacity: 0.3;*/
 	/*cursor: pointer;*/
 }
@@ -266,17 +212,4 @@ section {
 .link-image {
 	width: 100%;
 }
-
-/* Developed by */
-.sbfp-developed-by {
-	background: #0d0d0d;
-}
-
-.sbfp-developed-by-bg {
-	margin-top: 0.7%;
-	margin-left: 5%;
-}
-
-.developed-by-text {
-	color: #e5e5e5;
-}
+.
