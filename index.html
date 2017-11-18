@@ -35,10 +35,10 @@
 			<nav class="navbar navbar-expand-sm navbar-dark navbar-custom-primary">
 				<!-- Collapsible -->
 				<!--<a class="navbar-brand" href="#"><span class="sbfp-title-text">Super Best Friends Play</span></a>-->
-				<a class="navbar-brand" href="#"></a>
+				<a class="navbar-brand" href="#" style="margin-right:0;"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-primary-links">
 					<span class="navbar-toggler-icon"></span>
-				</button>
+				</button> 				
 	  			<!-- Links -->
 				<div class="collapse navbar-collapse" id="navbar-primary-links">
   					<ul class="navbar-nav mr-auto">
@@ -46,7 +46,7 @@
 							<a class="nav-link nav-link-custom" id="lps" href="#">Let's Plays</a>
     						</li>
 					</ul>	
-  					<ul class="navbar-nav">
+  					<ul class="navbar-nav mx-auto">
    						<li class="nav-item">
 							<a class="nav-link nav-link-custom" id="one-offs" href="#">One-Offs</a>
     						</li>
@@ -56,7 +56,7 @@
 	      						<a class="nav-link nav-link-custom" id="extras" href="#">Extras</a>
 	      					</li>
   					</ul>
-  					<ul class="navbar-nav">
+  					<ul class="navbar-nav mx-auto">
    						<li class="nav-item">
 							<a class="nav-link nav-link-custom" id="machinima" href="#">Machinima</a>
     						</li>
@@ -67,6 +67,7 @@
 	      					</li>
   					</ul>
 				</div>
+				
 			</nav>
 			</div>
 			<!--
@@ -93,36 +94,36 @@
 			</div>
 			-->
 			<div class="sbfp-lps" style="display:none;">
-			<div class="container-fluid">
+				<div class="container-fluid">
 				<div class="row">
-					<div class="lps-mini-gallery">
+					<div class="lps-gallery">
 						<figure class="lps-grid-images">
-							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+							<div class="lps-grid-image-box" onclick="location.href='https://www.youtube.com';">
 								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/evil-within-2.png" alt="TBFP Evil Within 2" />
 								<!-- <div class="lps-grid-image-text"><h3>Evil Within 2</h3></div> -->
 							</div>
-							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+							<div class="lps-grid-image-box" onclick="location.href='https://www.youtube.com';">
 								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/silent-hill.png" alt="TBFP Silent Hill" />
 							</div>
-							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+							<div class="lps-grid-image-box" onclick="location.href='https://www.youtube.com';">
 								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/sbfp/marvel-vs-capcom-infinite.png" alt="SBFP Marvel Vs. Capcom: Infinite" />
 							</div>
-							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+							<div class="lps-grid-image-box" onclick="location.href='https://www.youtube.com';">
 								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
 							</div>
-							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+							<div class="lps-grid-image-box" onclick="location.href='https://www.youtube.com';">
 								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/policenauts.png" alt="BFP Policenauts" />
 							</div>
-							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+							<div class="lps-grid-image-box" onclick="location.href='https://www.youtube.com';">
 								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/dark-souls.png" alt="BFP Dark Souls" />
 							</div>
-							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+							<div class="lps-grid-image-box" onclick="location.href='https://www.youtube.com';">
 								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/dead-space-2.png" alt="TBFP Dead Space 2" />
 							</div>
-							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+							<div class="lps-grid-image-box" onclick="location.href='https://www.youtube.com';">
 								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/minecraft-story-mode.png" alt="BFP Minecraft Story Mode" />
 							</div>
-							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+							<div class="lps-grid-image-box" onclick="location.href='https://www.youtube.com';">
 								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/the-walking-dead-s3.png" alt="The Walking Dead S3" />
 							</div>
 							
@@ -135,7 +136,7 @@
 										if ($(this).scrollTop() + $(this).innerHeight() + 1 >= $(this)[0].scrollHeight) {
 											//alert("end reached");
 											lpsGridImageNum++;
-											$(".lps-grid-image-textbox:nth-child("+lpsGridImageNum+")").css("display", "inline");
+											$(".lps-grid-image-box:nth-child("+lpsGridImageNum+")").css("display", "inline");
 										}
 									})
 									});
@@ -150,7 +151,100 @@
 						</figure>
 					</div>
 				</div>
-			</div>	
+				</div>	
+			</div>
+			<div class="sbfp-one-offs" style="display:none;">
+				<div class="container-fluid">
+				<div class="row">
+					<div class="one-offs-gallery">
+						<figure class="one-offs-grid-images">
+							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
+								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/evil-within-2.png" alt="TBFP Evil Within 2" />
+								<!-- <div class="lps-grid-image-text"><h3>Evil Within 2</h3></div> -->
+							</div>
+							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
+								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/silent-hill.png" alt="TBFP Silent Hill" />
+							</div>
+							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
+								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/sbfp/marvel-vs-capcom-infinite.png" alt="SBFP Marvel Vs. Capcom: Infinite" />
+							</div>
+							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
+								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
+							</div>
+							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
+								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
+							</div>
+							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
+								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
+							</div>
+							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
+								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
+							</div>
+							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
+								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
+							</div>
+							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
+								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
+							</div>
+							
+							<script>
+								var oneOffsGridImageNum = 12;
+								$(document).ready(function() {
+									jQuery(function($) {
+									$(".sbfp-one-offs").bind("scroll", function() {
+										//alert($(this)[0].scrollHeight);
+										if ($(this).scrollTop() + $(this).innerHeight() + 1 >= $(this)[0].scrollHeight) {
+											//alert("end reached");
+											oneOffsGridImageNum++;
+											$(".one-offs-grid-image-box:nth-child("+oneOffsGridImageNum+")").css("display", "inline");
+										}
+									})
+									});
+								});
+							</script>
+
+							<!--
+							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+								<h2 class="lps-grid-more-text">More Videos</h2>
+							</div>
+							-->	
+						</figure>
+					</div>
+				</div>
+				</div>	
+			</div>
+			<div class="sbfp-links" style="display:none;">
+				<div class="container-fluid">
+				<div class="row">
+					<div class="links-gallery">
+						<figure class="links-grid-images">
+							<div class="links-grid-image-box" style="text-align:center;" onclick="location.href='https://www.youtube.com';">
+								<img class="links-grid-image" src="./assets/images/sbfp/additional-content/links/youtube-logo.png" alt="Youtube" />
+								<!-- <div class="lps-grid-image-text"><h3>Evil Within 2</h3></div> -->
+							</div>
+							<div class="links-grid-image-box" style="text-align:center;" onclick="location.href='https://www.youtube.com';">
+								<img class="links-grid-image" src="./assets/images/sbfp/additional-content/links/twitch-logo.png" alt="Twitch.tv" />
+							</div>
+							<div class="links-grid-image-box" style="text-align:center;" onclick="location.href='https://www.youtube.com';">
+								<img class="links-grid-image" src="./assets/images/sbfp/additional-content/links/twitter-logo.png" alt="Twitter" />
+							</div>
+							<div class="links-grid-image-box" style="text-align:center;" onclick="location.href='https://www.youtube.com';">
+								<img class="links-grid-image" src="./assets/images/sbfp/additional-content/links/facebook-logo.png" alt="Facebook" />
+							</div>
+							<div class="links-grid-image-box" style="text-align:center;" onclick="location.href='https://www.youtube.com';">
+								<img class="links-grid-image" src="./assets/images/sbfp/additional-content/links/soundcloud-logo.png" alt="Soundcloud" />
+							</div>
+						</figure>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col links-merch" style="text-align:center;">
+						<div class="links-merch-image-box" onclick="location.href='https://www.youtube.com';">
+							<img class="links-merch-image" src="./assets/images/sbfp/additional-content/links/sharkrobot-logo.png" alt="Shark Robot" />
+						</div>
+					</div>					
+				</div>
+				</div>
 			</div>
 		</section>
 		
@@ -226,40 +320,98 @@
 
 		<script>
 			//var videosToggled = false;
+			//var navbarToggled = false;
 			var lpsToggled = false;
-			var navbarToggled = false;
-			$(document).ready(function() {
-				// Clicks, Presses
-				/*
-				$("#videos").click(function() {
-					if ($(".sbfp-navbar-primary").css("border-bottom") == "0px solid rgb(26, 26, 26)" 
-					    && videosToggled == false) {
-						videosToggled = true;
-						$(".sbfp-navbar-primary").css("border-bottom", "2px solid rgb(26, 26, 26)");
-					} else {
-						videosToggled = false;
-						IF statement needed below to stop weird slide toggle with #lps
-						if ($(".sbfp-lps").css("display") == "block" && lpsToggled == true) {
-							$(".sbfp-lps").slideToggle();
-						}
-						$(".sbfp-navbar-primary").css("border-bottom", "0px solid rgb(26, 26, 26)");
+			var oneOffsToggled = false;
+			var linksToggled = false; 
+			
+			$(document).ready(function() {		
+				// Functions
+				function toggleLetsPlays() {
+					if (oneOffsToggled == true) {
+						toggleOneOffs();
+					} else if (linksToggled == true) {
+						toggleLinks();
 					}
-					//$(".sbfp-navbar-videos").slideToggle();
-				});
-				*/	
-				$("#lps").click(function() {
+
 					if ($(".sbfp-lps").css("display") == "none" && 
 					    $(".sbfp-navbar-primary").css("border-bottom") == "0px solid rgb(26, 26, 26)" && 
 					    lpsToggled == false) {
 						lpsToggled = true;
 						$(".sbfp-navbar-primary").css("border-bottom", "2px solid rgb(26, 26, 26)");
+						$("#lps").toggleClass("active");
+						$("#lps").css("color", "#ff9900");
 						$(".sbfp-newest-uploaded").css("z-index", "-1");
 					} else {
 						lpsToggled = false;
 						$(".sbfp-navbar-primary").css("border-bottom", "0px solid rgb(26, 26, 26)");
+						$("#lps").removeClass("active");
+						$("#lps").css("color", "#e5e5e5");
 						$(".sbfp-newest-uploaded").css("z-index", "0");
 					}
 					$(".sbfp-lps").slideToggle();
+				}
+				
+				function toggleOneOffs() {
+					if (lpsToggled == true) {
+						toggleLetsPlays();
+					} else if (linksToggled == true) {
+						toggleLinks();
+					}
+					
+					if ($(".sbfp-one-offs").css("display") == "none" && 
+					    $(".sbfp-navbar-primary").css("border-bottom") == "0px solid rgb(26, 26, 26)" && 
+					    oneOffsToggled == false) {
+						oneOffsToggled = true;
+						$(".sbfp-navbar-primary").css("border-bottom", "2px solid rgb(26, 26, 26)");
+						$("#one-offs").toggleClass("active");
+						$("#one-offs").css("color", "#ff9900");
+						$(".sbfp-newest-uploaded").css("z-index", "-1");
+					} else {
+						oneOffsToggled = false;
+						$(".sbfp-navbar-primary").css("border-bottom", "0px solid rgb(26, 26, 26)");
+						$("#one-offs").removeClass("active");
+						$("#one-offs").css("color", "#e5e5e5");
+						$(".sbfp-newest-uploaded").css("z-index", "0");
+					}
+					$(".sbfp-one-offs").slideToggle();
+					
+				}
+				
+				function toggleLinks() {
+					if (lpsToggled == true) {
+						toggleLetsPlays();
+					} else if (oneOffsToggled == true) {
+						toggleOneOffs();
+					}
+
+					if ($(".sbfp-links").css("display") == "none" &&
+					    $(".sbfp-navbar-primary").css("border-bottom") == "0px solid rgb(26, 26, 26)" && 
+					    linksToggled == false) {
+						linksToggled = true;
+						$(".sbfp-navbar-primary").css("border-bottom", "2px solid rgb(26, 26, 26)");
+						$("#links").toggleClass("active");
+						$("#links").css("color", "#ff9900");
+						$(".sbfp-newest-uploaded").css("z-index", "-1");	
+					} else {
+						linksToggled = false;
+						$(".sbfp-navbar-primary").css("border-bottom", "0px solid rgb(26, 26, 26)");
+						$("#links").removeClass("active");
+						$("#links").css("color", "#e5e5e5");
+						$(".sbfp-newest-uploaded").css("z-index", "0");
+					}
+					$(".sbfp-links").slideToggle();
+				}
+				
+				//Navigation links clicked
+				$("#lps").click(function() {
+					toggleLetsPlays();
+				});
+				$("#one-offs").click(function() {
+					toggleOneOffs();
+				});
+				$("#links").click(function() {
+					toggleLinks();	
 				});
 			});
 		</script>
