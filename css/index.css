@@ -21,7 +21,7 @@ section {
 }
 */
 
-.sbfp-navbar-primary {
+.sbfp-navbar-primary, .sbfp-navbar-videos {
 	border-bottom: 0px solid #1a1a1a;
 }
 
@@ -29,20 +29,23 @@ section {
 	color: #1a1a1a;
 }
 
+.
+
 #navbar-nav-adjustment {
-	width: 113.61px;
+	/*width: 113.61px;*/
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item .nav-link,
-.navbar .navbar-nav .nav-item .nav-link {
-	color: #e5e5e5;
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link
+/*.navbar .navbar-nav .nav-item .nav-link*/ {
+	color: #e5e5e5;	
 	font-weight: 500;
 	font-size: 20px;
 	float: center;
+	padding: 0;
 }
 
-.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover,
-.navbar .navbar-nav .nav-item .nav-link:hover {
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover
+/*.navbar .navbar-nav .nav-item .nav-link:hover*/ {
 	color: #b3b3b3;
 }
 
@@ -50,18 +53,24 @@ section {
 	background-color: #0d0d0d;
 }
 
-.navbar-custom-secondary {
+.navbar-custom-videos {
 	background-color: #0d0d0d;
 }
 
-#navbar-primary-links, #navbar-secondary-links {
+
+#navbar-primary-links/*, #navbar-videos-links*/ {
 	margin: 0% 10% 0% 10%;
-	display: flex!important;
+	/*display: flex!important;
 	flex-basis: auto;
-	flex-grow: 1;
+	flex-grow: 1;*/
 }
 
+
 @media (max-width: 575px) {
+	#navbar-primary-links {
+		margin: 0;
+	}
+
 	#navbar-nav-adjustment {
 		width: 68.88;	
 	}
@@ -119,11 +128,11 @@ section {
 
 @media (max-width: 575px) {
 	.sbfp-title .container {
-		font-size: 20px;
+		font-size: 15px;
 	}
 }
 
-/* Section: Videos */
+/* Newest Uploaded */
 .content {
 	/*background: transparent;*/
 }
@@ -182,19 +191,30 @@ section {
 	color: #e5e5e5;
 }
 
-/*
+@media (max-width: 575px) {
+	.
+	.developed-by-text {
+		font-weight: 400;	
+		font-size: 13px;
+	}
+
+	.carousel-video-text {
+		font-weight: 400;
+		font-size: 12px;	
+	}
+}
+
+/* Let's Play Gallery */
 .sbfp-lps {
 	position: relative;
 	border-top: 0px solid transparent;
-	border-right: 50px solid #0d0d0d;
+	border-right: 12px solid transparent;
 	border-bottom: 0px solid transparent;
-	border-left: 50px solid #0d0d0d;	
-}
-*/
-
-.sbfp-lps {
-	background: #1a1a1a; /*#333333;*/
+	border-left: 12px solid transparent;	
+	background: #0d0d0d; /*#333333;*/
+	height: 80%;
 	z-index: 20;
+	overflow-y: auto;
 }
 
 .lps-mini-gallery {
@@ -202,7 +222,7 @@ section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 0% 0% 0% 0%;/*margin: 6% 0% 2% 0%;*/
+	margin: 2% 0% 0% 0%;/*margin: 6% 0% 2% 0%;*/
 }
 
 .lps-grid {

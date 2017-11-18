@@ -22,61 +22,76 @@
 		<!-- SBFP intro video autoplaying in the background -->
 		<!-- Credit goes to 2Snacks -->
 		<!-- Change this so it is embedded ??-->
-		<div>
+		<div class="sbfp-video-bg">
 			<video autoplay loop muted class="bv-video" style="position:fixed;width:100%;height:100%;object-fit:cover;filter:brightness(15%);z-index:-1">
 				<source src="./assets/videos/sbfp-intro.mp4" type="video/mp4" />
 			</video>
 		</div>
+
+		<!-- Create another div to replace the video for mobiles, display:none for now -->
 		
 		<section class="sbfp-content">
 			<div class="sbfp-navbar-primary">
 			<nav class="navbar navbar-expand-sm navbar-dark navbar-custom-primary">
 				<!-- Collapsible -->
 				<!--<a class="navbar-brand" href="#"><span class="sbfp-title-text">Super Best Friends Play</span></a>-->
-				<!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-primary-links">
+				<a class="navbar-brand" href="#"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-primary-links">
 					<span class="navbar-toggler-icon"></span>
-				</button>-->
+				</button>
 	  			<!-- Links -->
-				<div id="navbar-primary-links" style="align-items:center;margin:0% 10% 0% 10%;">
-  					<ul class="navbar-nav" id="navbar-nav-adjustment">
+				<div class="collapse navbar-collapse" id="navbar-primary-links">
+  					<ul class="navbar-nav mr-auto">
    						<li class="nav-item">
-							<a class="nav-link" id="videos" href="#">Videos</a>
+							<a class="nav-link nav-link-custom" id="lps" href="#">Let's Plays</a>
+    						</li>
+					</ul>	
+  					<ul class="navbar-nav">
+   						<li class="nav-item">
+							<a class="nav-link nav-link-custom" id="one-offs" href="#">One-Offs</a>
     						</li>
 					</ul>
 					<ul class="navbar-nav mx-auto">
     						<li class="nav-item">
-	      						<a class="nav-link" href="#">Link 2</a>
+	      						<a class="nav-link nav-link-custom" id="extras" href="#">Extras</a>
 	      					</li>
   					</ul>
-					<ul class="navbar-nav">
-    						<li class="nav-item navbar-primary-link">
-	      						<a class="nav-link" href="#">Link 3</a>
+  					<ul class="navbar-nav">
+   						<li class="nav-item">
+							<a class="nav-link nav-link-custom" id="machinima" href="#">Machinima</a>
+    						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+    						<li class="nav-item">
+	      						<a class="nav-link nav-link-custom" id="links" href="#">Links</a>
 	      					</li>
   					</ul>
 				</div>
 			</nav>
 			</div>
-			<div class="sbfp-navbar-secondary" style="display:none;">
-			<nav class="navbar navbar-expand-sm navbar-dark navbar-custom-secondary">
-				<div id="navbar-secondary-links" style="align-items:center;margin:0% 10% 0% 10%;">
+			<!--
+			<div class="sbfp-navbar-videos" style="display:none;">
+			<nav class="navbar navbar-expand-sm navbar-dark navbar-custom-videos">
+				<div id="navbar-videos-links" style="align-items:center;margin:0% 10% 0% 10%;">
 					<ul class="navbar-nav">
    						<li class="nav-item">
-							<a class="nav-link" id="lps" href="#">Let's Plays</a>
+							<a class="nav-link nav-link-custom" id="lps" href="#">Let's Plays</a>
     						</li>
 					</ul>
 					<ul class="navbar-nav mx-auto">
     						<li class="nav-item">
-	      						<a class="nav-link" href="#">Link 2</a>
+	      						<a class="nav-link nav-link-custom" href="#">Link 2</a>
 	      					</li>
   					</ul>
 					<ul class="navbar-nav">
     						<li class="nav-item">
-	      						<a class="nav-link" href="#">Link 3</a>
+	      						<a class="nav-link nav-link-custom" href="#">Link 3</a>
 	      					</li>
   					</ul>
 				</div>
 			</nav>
 			</div>
+			-->
 			<div class="sbfp-lps" style="display:none;">
 			<div class="container-fluid">
 				<div class="row">
@@ -88,20 +103,45 @@
 							</div>
 							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
 								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/silent-hill.png" alt="TBFP Silent Hill" />
-								<!-- <div class="lps-grid-image-text"><h3>Silent Hill</h3></div> -->
 							</div>
 							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
 								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/sbfp/marvel-vs-capcom-infinite.png" alt="SBFP Marvel Vs. Capcom: Infinite" />
-								<!-- div class="lps-grid-image-text"><h3>Marvel Vs. Capcom: Infinite</h3></div> -->
 							</div>
 							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
 								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
-								<!-- div class="lps-grid-image-text"><h3>marvel vs. capcom: infinite</h3></div> -->
 							</div>
 							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
 								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/policenauts.png" alt="BFP Policenauts" />
-								<!-- div class="lps-grid-image-text"><h3>marvel vs. capcom: infinite</h3></div> -->
 							</div>
+							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/dark-souls.png" alt="BFP Dark Souls" />
+							</div>
+							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/dead-space-2.png" alt="TBFP Dead Space 2" />
+							</div>
+							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/minecraft-story-mode.png" alt="BFP Minecraft Story Mode" />
+							</div>
+							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
+								<img class="lps-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/the-walking-dead-s3.png" alt="The Walking Dead S3" />
+							</div>
+							
+							<script>
+								var lpsGridImageNum = 12;
+								$(document).ready(function() {
+									jQuery(function($) {
+									$(".sbfp-lps").bind("scroll", function() {
+										//alert($(this)[0].scrollHeight);
+										if ($(this).scrollTop() + $(this).innerHeight() + 1 >= $(this)[0].scrollHeight) {
+											//alert("end reached");
+											lpsGridImageNum++;
+											$(".lps-grid-image-textbox:nth-child("+lpsGridImageNum+")").css("display", "inline");
+										}
+									})
+									});
+								});
+							</script>
+
 							<!--
 							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
 								<h2 class="lps-grid-more-text">More Videos</h2>
@@ -137,7 +177,7 @@
 									<ul class="amazingcarousel-list">
 										<li class="amazingcarousel-item">
 											<div class="amazingcarousel-item-container">
-<div class="amazingcarousel-image"><a href="https://www.youtube.com/embed/kE-QYVJjSY0" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="540" ><img src="https://img.youtube.com/vi/kE-QYVJjSY0/hqdefault.jpg" /></a></div>
+<div class="amazingcarousel-image"><a href="https://www.youtube.com/embed/?listType=playlist&index=0&list=UU84X0epDRFdTrybxEX8ZWkA" class="html5lightbox" data-group="amazingcarousel-1" data-width="960" data-height="540" ><img src="https://img.youtube.com/vi/kE-QYVJjSY0/hqdefault.jpg" /></a></div>
 <div class="amazingcarousel-title"><span class="carousel-video-text">Two Best Friends Play<br>Silent Hill<br>Part 6</span></div>                    </div>
 										</li>
 										<li class="amazingcarousel-item">
@@ -174,55 +214,7 @@
 			</div>
 			</div>
 		</section>
-		<!--
-		<section class="sbfp-additional-content">
-			<div class="sbfp-additional-content-bg">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12 col-sm-12">
-						<div class="additional-content">
-							<h2 class="additional-content-text">Additional <span style="color:white;">Content</span></h2>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-2 col-sm-4">
-						<div class="additional-content-link">
-							<img class="link-image" src="./assets/images/sbfp/additional-content/links/twitch.png" alt="Twitch" />
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-4">
-						<div class="additional-content-link">
-							<img class="link-image" src="./assets/images/sbfp/additional-content/links/twitch.png" alt="Twitch" />
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-4">
-						<div class="additional-content-link">
-							<img class="link-image" src="./assets/images/sbfp/additional-content/links/twitch.png" alt="Twitch" />
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-4">
-						<div class="additional-content-link">
-							<img class="link-image" src="./assets/images/sbfp/additional-content/links/twitch.png" alt="Twitch" />
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-4">
-						<div class="additional-content-link">
-							<img class="link-image" src="./assets/images/sbfp/additional-content/links/twitch.png" alt="Twitch" />
-						</div> -->
-					<!--
-					</div>
-					<div class="col-md-2 col-sm-4">
-						<div class="additional-content-link">
-							<img class="link-image" src="./assets/images/sbfp/additional-content/links/twitch.png" alt="Twitch" />
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</section>
-		-->
-	
+		
 		<section class="sbfp-developed-by fixed-bottom">
 			<div class="sbfp-developed-by-bg">
 				<div class="developed-by">
@@ -233,31 +225,38 @@
 		</section>
 
 		<script>
-			var videosToggled = false;
+			//var videosToggled = false;
 			var lpsToggled = false;
 			var navbarToggled = false;
 			$(document).ready(function() {
 				// Clicks, Presses
+				/*
 				$("#videos").click(function() {
-					if ($(".sbfp-navbar-primary").css("border-bottom") == "0px solid rgb(26, 26, 26)" && videosToggled == false) {
+					if ($(".sbfp-navbar-primary").css("border-bottom") == "0px solid rgb(26, 26, 26)" 
+					    && videosToggled == false) {
 						videosToggled = true;
 						$(".sbfp-navbar-primary").css("border-bottom", "2px solid rgb(26, 26, 26)");
 					} else {
 						videosToggled = false;
-						/* IF statement needed below to stop weird slide toggle with #lps */
+						IF statement needed below to stop weird slide toggle with #lps
 						if ($(".sbfp-lps").css("display") == "block" && lpsToggled == true) {
 							$(".sbfp-lps").slideToggle();
 						}
 						$(".sbfp-navbar-primary").css("border-bottom", "0px solid rgb(26, 26, 26)");
 					}
-					$(".sbfp-navbar-secondary").slideToggle();
-				});	
+					//$(".sbfp-navbar-videos").slideToggle();
+				});
+				*/	
 				$("#lps").click(function() {
-					if ($(".sbfp-lps").css("display") == "none" && lpsToggled == false) {
+					if ($(".sbfp-lps").css("display") == "none" && 
+					    $(".sbfp-navbar-primary").css("border-bottom") == "0px solid rgb(26, 26, 26)" && 
+					    lpsToggled == false) {
 						lpsToggled = true;
+						$(".sbfp-navbar-primary").css("border-bottom", "2px solid rgb(26, 26, 26)");
 						$(".sbfp-newest-uploaded").css("z-index", "-1");
 					} else {
 						lpsToggled = false;
+						$(".sbfp-navbar-primary").css("border-bottom", "0px solid rgb(26, 26, 26)");
 						$(".sbfp-newest-uploaded").css("z-index", "0");
 					}
 					$(".sbfp-lps").slideToggle();
