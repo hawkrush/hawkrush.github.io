@@ -212,43 +212,57 @@ section {
 
 /* Content */
 .sbfp-lps, .sbfp-one-offs, 
-.sbfp-extras, .sbfp-machinima {
+.sbfp-extras, .sbfp-machinima,
+.sbfp-links {
 	position: relative;
 	border-top: 0px solid transparent;
 	border-right: 12px solid transparent;
-	border-bottom: 0px solid transparent;
+	border-bottom: 0px solid #1a1a1a;
 	border-left: 12px solid transparent;	
 	background: #0d0d0d; /*#333333;*/
 	height: 87%;
 	z-index: 20;
+	/*overflow-y: auto;*/
+}
+
+.sbfp-lps, .sbfp-one-offs,
+.sbfp-extras, .sbfp-machinima {
 	overflow-y: auto;
 }
 
 .lps-gallery, .one-offs-gallery, 
-.extras-gallery, .machinima-gallery {
+.extras-gallery, .machinima-gallery,
+.links-gallery {
 	font-size: 0;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	margin: 3% 0% 0% 0%;/*margin: 6% 0% 2% 0%;*/
 }
 
+.lps-gallery, .one-offs-gallery, 
+.extras-gallery, .machinima-gallery, {
+	justify-content: space-between;
+}
+
 .lps-grid-images, .one-offs-grid-images, 
-.extras-grid-images, .machinima-grid-images {
+.extras-grid-images, .machinima-grid-images,
+.links-grid-images {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0% 2% 0% 2%;
 }
 
 .lps-grid-image-box, .one-offs-grid-image-box,
-.extras-grid-image-box, .machinima-grid-image-box {
+.extras-grid-image-box, .machinima-grid-image-box,
+.links-grid-image-box {
 	display: inline;
 	/*height: 100%;*/
 	width: 25%;
 }
 
 .lps-grid-image-box:hover, .one-offs-grid-image-box:hover, 
-.extras-grid-image-box:hover, .machinima-grid-image-box:hover {
+.extras-grid-image-box:hover, .machinima-grid-image-box:hover,
+.links-grid-image-box:hover {
 	cursor: pointer;
 }
 
@@ -259,7 +273,8 @@ section {
 }
 
 .lps-grid-image, .one-offs-grid-image, 
-.extras-grid-image, .machinima-grid-image {
+.extras-grid-image, .machinima-grid-image,
+.links-grid-image {
 	position: relative;
 	width: 100%;
 	-webkit-filter: brightness(40%);
@@ -268,7 +283,8 @@ section {
 }
 
 .lps-grid-image:hover, .one-offs-grid-image:hover, 
-.extras-grid-image:hover, .machinima-grid-image:hover {
+.extras-grid-image:hover, .machinima-grid-image:hover,
+.links-grid-image:hover{
 	-webkit-filter: brightness(100%);
 	transition: 0.2s;
 	/*opacity: 0.3;*/
@@ -323,57 +339,7 @@ section {
 }
 */
 
-/* Links */
-.sbfp-links {
-	position: relative;
-	border-top: 0px solid transparent;
-	border-right: 12px solid transparent;
-	border-bottom: 0px solid transparent;
-	border-left: 12px solid transparent;	
-	background: #0d0d0d; /*#333333;*/
-	height: 87%;
-	z-index: 20;
-}
-
-.links-gallery {
-	font-size: 0;
-	display: flex;
-	flex-wrap: wrap;
-	/*justify-content: space-between;*/
-	margin: 3% 0% 0% 0%;/*margin: 6% 0% 2% 0%;*/
-}
-
-.links-grid-images {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0% 2% 0% 2%;
-}
-
-.links-grid-image-box {
-	display: inline;
-	/*height: 100%;*/
-	width: 20%;
-}
-
-.links-grid-image-box:hover {
-	cursor: pointer;
-}
-
-.links-grid-image {
-	position: relative;
-	width: 50%;
-	-webkit-filter: brightness(40%);
-	transition: 0.2s
-
-}
-
-.links-grid-image:hover {
-	-webkit-filter: brightness(100%);
-	transition: 0.2s;
-	/*opacity: 0.3;*/
-	/*cursor: pointer;*/
-}
-
+/* Links-specific */
 .links-merch {
 	font-size: 0;
 	margin: 3% 2% 0% 2%;/*margin: 6% 0% 2% 0%;*/

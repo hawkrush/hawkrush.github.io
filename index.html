@@ -39,7 +39,7 @@
 				<!-- Collapsible -->
 				<!--<a class="navbar-brand" href="#"><span class="sbfp-title-text">Super Best Friends Play</span></a>-->
 				<a class="navbar-brand" href="#" style="margin-right:0;"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-primary-links">
+				<button class="navbar-toggler" id="navbar-button" type="button" data-toggle="collapse" data-target="#navbar-primary-links">
 					<span class="navbar-toggler-icon"></span>
 				</button> 				
 	  			<!-- Links -->
@@ -111,56 +111,6 @@
 				<div class="row">
 					<div class="one-offs-gallery">
 						<figure class="one-offs-grid-images">
-							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/evil-within-2.png" alt="TBFP Evil Within 2" />
-								<!-- <div class="lps-grid-image-text"><h3>Evil Within 2</h3></div> -->
-							</div>
-							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/silent-hill.png" alt="TBFP Silent Hill" />
-							</div>
-							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/sbfp/marvel-vs-capcom-infinite.png" alt="SBFP Marvel Vs. Capcom: Infinite" />
-							</div>
-							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
-							</div>
-							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
-							</div>
-							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
-							</div>
-							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
-							</div>
-							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
-							</div>
-							<div class="one-offs-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="one-offs-grid-image" src="./assets/images/sbfp/lps-gallery/bfp/marc-eckos-getting-up.png" alt="BFP Marc Ecko's Getting Up: contents Under Pressure" />
-							</div>
-							
-							<script>
-								var oneOffsGridImageNum = 12;
-								$(document).ready(function() {
-									jQuery(function($) {
-									$(".sbfp-one-offs").bind("scroll", function() {
-										//alert($(this)[0].scrollHeight);
-										if ($(this).scrollTop() + $(this).innerHeight() + 1 >= $(this)[0].scrollHeight) {
-											//alert("end reached");
-											oneOffsGridImageNum++;
-											$(".one-offs-grid-image-box:nth-child("+oneOffsGridImageNum+")").css("display", "inline");
-										}
-									})
-									});
-								});
-							</script>
-
-							<!--
-							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
-								<h2 class="lps-grid-more-text">More Videos</h2>
-							</div>
-							-->	
 						</figure>
 					</div>
 				</div>
@@ -230,55 +180,6 @@
 				<div class="row">
 					<div class="machinima-gallery">
 						<figure class="machinima-grid-images">
-							<div class="machinima-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="machinima-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/evil-within-2.png" alt="TBFP Evil Within 2" />
-								<!-- <div class="lps-grid-image-text"><h3>Evil Within 2</h3></div> -->
-							</div>
-							<div class="machinima-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="machinima-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/silent-hill.png" alt="TBFP Silent Hill" />
-							</div>	
-							<div class="machinima-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="machinima-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/silent-hill.png" alt="TBFP Silent Hill" />
-							</div>
-							<div class="machinima-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="machinima-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/silent-hill.png" alt="TBFP Silent Hill" />
-							</div>	
-							<div class="machinima-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="machinima-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/silent-hill.png" alt="TBFP Silent Hill" />
-							</div>
-							<div class="machinima-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="machinima-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/silent-hill.png" alt="TBFP Silent Hill" />
-							</div>	
-							<div class="machinima-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="machinima-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/silent-hill.png" alt="TBFP Silent Hill" />
-							</div>
-							<div class="machinima-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="machinima-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/silent-hill.png" alt="TBFP Silent Hill" />
-							</div>	
-							<div class="machinima-grid-image-box" onclick="location.href='https://www.youtube.com';">
-								<img class="machinima-grid-image" src="./assets/images/sbfp/lps-gallery/tbfp/silent-hill.png" alt="TBFP Silent Hill" />
-							</div>						
-							<script>
-								var machinimaGridImageNum = 12;
-								$(document).ready(function() {
-									jQuery(function($) {
-									$(".sbfp-extras").bind("scroll", function() {
-										//alert($(this)[0].scrollHeight);
-										if ($(this).scrollTop() + $(this).innerHeight() + 1 >= $(this)[0].scrollHeight) {
-											//alert("end reached");
-											machinimaGridImageNum++;
-											$(".machinima-image-box:nth-child("+machinimaGridImageNum+")").css("display", "inline");
-										}
-									})
-									});
-								});
-							</script>
-
-							<!--
-							<div class="lps-grid-image-textbox" onclick="location.href='https://www.youtube.com';">
-								<h2 class="lps-grid-more-text">More Videos</h2>
-							</div>
-							-->	
 						</figure>
 					</div>
 				</div>
@@ -392,9 +293,15 @@
 		<script>
 			//var videosToggled = false;
 			//var navbarToggled = false;
-			var sbfpPlaylists = null;
+			var sbfpLpsPlaylists = null;
+			var sbfpOneOffsPlaylist = null;
+			var sbfpExtrasPlaylist = null;
+			var sbfpMachinimaPlaylist = null;
 
 			var lpsGridImageNum = 12;
+			var oneOffsGridImageNum = 12;
+			var extrasGridImageNum = 12;
+			var machinimaGridImageNum = 12;
 			
 			var lpsToggled = false;
 			var oneOffsToggled = false;
@@ -402,28 +309,69 @@
 			var machinimaToggled = false;
 			var linksToggled = false;
 
-			$(window).bind('createContent', function() {
-				console.log("============= Creating content =============");
-				for (i=0; i<sbfpPlaylists["items"].length; i++) {
-					var videoID = JSON.stringify(sbfpPlaylists["items"][i]["id"]).replace(/['"]+/g, '');
+			$(window).bind('createLpsContent', function() {
+				console.log("============= Creating LPs content =============");
+				for (i=0; i<sbfpLpsPlaylists["items"].length; i++) {
+					var videoID = JSON.stringify(sbfpLpsPlaylists["items"][i]["id"]).replace(/['"]+/g, '');
 					var videoURL = "https://www.youtube.com/embed/?listType=playlist&list="+videoID+"&index=0";
-					var videoImgURL = JSON.stringify(sbfpPlaylists["items"][i]["snippet"]["thumbnails"]["high"]["url"]);
-					var videoTitle = JSON.stringify(sbfpPlaylists["items"][i]["snippet"]["title"]);
+					var videoImgURL = JSON.stringify(sbfpLpsPlaylists["items"][i]["snippet"]["thumbnails"]["high"]["url"]);
+					var videoTitle = JSON.stringify(sbfpLpsPlaylists["items"][i]["snippet"]["title"]);
 
 					console.log("Adding content to .sbfp-lps");
 
 					if (i >= lpsGridImageNum) {
 						$(".lps-grid-images").append('<div class="lps-grid-image-box" id="lp-'+i+'" style="display:none;">'); 
-						$("#lp-"+i).append('<a class="gallery-video-link" id="gallery-video-link-'+i+'" href="'+videoURL+'"><img class="lps-grid-image" src='+videoImgURL+' alt='+videoTitle+' /></a>');
+						$("#lp-"+i).append('<a class="gallery-video-link" id="lp-video-link-'+i+'" href="'+videoURL+'"><img class="lps-grid-image" src='+videoImgURL+' alt='+videoTitle+' /></a>');
 					} else {
 						$(".lps-grid-images").append('<div class="lps-grid-image-box" id="lp-'+i+'">'); 
-						$("#lp-"+i).append('<a class="gallery-video-link" id="gallery-video-link-'+i+'" href="'+videoURL+'"><img class="lps-grid-image" src='+videoImgURL+' alt='+videoTitle+' /></a>');
+						$("#lp-"+i).append('<a class="gallery-video-link" id="lp-video-link-'+i+'" href="'+videoURL+'"><img class="lps-grid-image" src='+videoImgURL+' alt='+videoTitle+' /></a>');
+					}	
+				}	
+			});
+			$(window).bind('createOneOffsContent', function() {
+				console.log("============= Creating one-offs content =============");
+				for (i=0; i<sbfpOneOffsPlaylist["items"].length; i++) {
+					var videoID = JSON.stringify(sbfpOneOffsPlaylist["items"][i]["snippet"]["resourceId"]["videoId"]).replace(/['"]+/g, '');
+					var videoURL = "https://www.youtube.com/embed/"+videoID;
+					var videoImgURL = JSON.stringify(sbfpOneOffsPlaylist["items"][i]["snippet"]["thumbnails"]["high"]["url"]);
+					var videoTitle = JSON.stringify(sbfpOneOffsPlaylist["items"][i]["snippet"]["title"]);
+
+					console.log("Adding content to .sbfp-one-offs");
+
+					if (i >= oneOffsGridImageNum) {
+						$(".one-offs-grid-images").append('<div class="one-offs-grid-image-box" id="one-off-'+i+'" style="display:none;">'); 
+						$("#one-off-"+i).append('<a class="gallery-video-link" id="one-off-video-link-'+i+'" href="'+videoURL+'"><img class="one-offs-grid-image" src='+videoImgURL+' alt='+videoTitle+' /></a>');
+					} else {
+						$(".one-offs-grid-images").append('<div class="one-offs-grid-image-box" id="one-off-'+i+'">'); 
+						$("#one-off-"+i).append('<a class="gallery-video-link" id="one-off-video-link-'+i+'" href="'+videoURL+'"><img class="one-offs-grid-image" src='+videoImgURL+' alt='+videoTitle+' /></a>');
+					}	
+				}	
+			});
+			/*
+			$(window).bind('createExtrasContent', function() {
+			});*/
+			$(window).bind('createMachinimaContent', function() {
+				console.log("============= Creating machinima content =============");
+				for (i=0; i<sbfpMachinimaPlaylist["items"].length; i++) {
+					var videoID = JSON.stringify(sbfpMachinimaPlaylist["items"][i]["snippet"]["resourceId"]["videoId"]).replace(/['"]+/g, '');
+					var videoURL = "https://www.youtube.com/embed/"+videoID;
+					var videoImgURL = JSON.stringify(sbfpMachinimaPlaylist["items"][i]["snippet"]["thumbnails"]["high"]["url"]);
+					var videoTitle = JSON.stringify(sbfpMachinimaPlaylist["items"][i]["snippet"]["title"]);
+					
+					console.log("Adding content to .sbfp-machinima");
+					
+					if (i >= machinimaGridImageNum) {
+						$(".machinima-grid-images").append('<div class="machinima-grid-image-box" id="machinima-'+i+'" style="display:none;">'); 
+						$("#machinima-"+i).append('<a class="gallery-video-link" id="machinima-video-link-'+i+'" href="'+videoURL+'"><img class="machinima-grid-image" src='+videoImgURL+' alt='+videoTitle+' /></a>');
+					} else {
+						$(".machinima-grid-images").append('<div class="machinima-grid-image-box" id="machinima-'+i+'">'); 
+						$("#machinima-"+i).append('<a class="gallery-video-link" id="machinima-video-link-'+i+'" href="'+videoURL+'"><img class="machinima-grid-image" src='+videoImgURL+' alt='+videoTitle+' /></a>');
 					}	
 				}
-				
 			});
-			$(window).bind('createPlaylists', function() {
-				console.log("============= Creating list of playlists  =============");
+		
+			$(window).bind('createLpsPlaylist', function() {
+				console.log("============= Creating list of LP playlists  =============");
 				// Playlists File Creation
 				var xhr = new XMLHttpRequest();
 				
@@ -438,7 +386,7 @@
 						if (xhr.status == 200) {
 							console.log("Request processed");
 							try {
-								sbfpPlaylists = JSON.parse(xhr.responseText);
+								sbfpLpsPlaylists = JSON.parse(xhr.responseText);
 								//console.log(JSON.stringify(sbfpPlaylists["items"].length));//[0]["snippet"]);
 								
 								/*$.each(sbfpPlaylists["items"], function(i, item) {
@@ -450,7 +398,7 @@
 									console.log(JSON.stringify(sbfpPlaylists["items"][i]["id"]));
 								}*/
 								console.log("Response received is JSON");
-								$(window).trigger('createContent');
+								$(window).trigger('createLpsContent');
 
 							} catch(err) {
 								console.log("Response received is not JSON");
@@ -464,22 +412,130 @@
 				xhr.open('GET',
 					 "https://www.googleapis.com/youtube/v3/playlists?channelId=UC84X0epDRFdTrybxEX8ZWkA&part=snippet&maxResults=25&key=AIzaSyAZFp6zixMQ0bbf0o0Sj7c0fH6xAEkumIw&", true);
 				xhr.send();
+			});
+			$(window).bind('createOneOffsPlaylist', function() {
+				console.log("============= Creating list of one-offs  =============");
+				// Playlists File Creation
+				var xhr = new XMLHttpRequest();
+				
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState == 1) {
+						console.log("Server connection established");	
+					} else if (xhr.readyState == 2) {
+						console.log("Request received");
+					} else if (xhr.readyState == 3) {
+						console.log("Processing request");
+					} else if (xhr.readyState == 4) {
+						if (xhr.status == 200) {
+							console.log("Request processed");
+							try {
+								sbfpOneOffsPlaylist = JSON.parse(xhr.responseText);
+								//console.log(JSON.stringify(sbfpPlaylists["items"].length));//[0]["snippet"]);
+								
+								/*$.each(sbfpPlaylists["items"], function(i, item) {
+									console.log(sbfpPlaylists[i]);
+									//console.log(item["snippet"]);
+								});*/
+								/*
+								for (i=0; i<sbfpPlaylists["items"].length; i++) {
+									console.log(JSON.stringify(sbfpPlaylists["items"][i]["id"]));
+								}*/
+								console.log("Response received is JSON");
+								$(window).trigger('createOneOffsContent');
 
+							} catch(err) {
+								console.log("Response received is not JSON");
+							}
+						} else if (xhr.status == 404) {
+							console.log("Request could not be processed");
+						}
+					}
+				}
+				
+				xhr.open('GET',
+					 "https://www.googleapis.com/youtube/v3/playlistItems?playlistId=PLhfoFvhaqqZU_mK3CEgjxZh3-0QZ7KKbM&part=snippet&maxResults=25&key=AIzaSyAZFp6zixMQ0bbf0o0Sj7c0fH6xAEkumIw&", true);
+				xhr.send();
+			});
+			/*
+			$(window).bind('createExtrasPlaylist', function() {
+			});*/
+			$(window).bind('createMachinimaPlaylist', function() {
+				console.log("============= Creating list of machinima videos  =============");
+				// Playlists File Creation
+				var xhr = new XMLHttpRequest();
+				
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState == 1) {
+						console.log("Server connection established");	
+					} else if (xhr.readyState == 2) {
+						console.log("Request received");
+					} else if (xhr.readyState == 3) {
+						console.log("Processing request");
+					} else if (xhr.readyState == 4) {
+						if (xhr.status == 200) {
+							console.log("Request processed");
+							try {
+								sbfpMachinimaPlaylist = JSON.parse(xhr.responseText);
+								//console.log(JSON.stringify(sbfpPlaylists["items"].length));//[0]["snippet"]);
+								
+								/*$.each(sbfpPlaylists["items"], function(i, item) {
+									console.log(sbfpPlaylists[i]);
+									//console.log(item["snippet"]);
+								});*/
+								/*
+								for (i=0; i<sbfpPlaylists["items"].length; i++) {
+									console.log(JSON.stringify(sbfpPlaylists["items"][i]["id"]));
+								}*/
+								console.log("Response received is JSON");
+								$(window).trigger('createMachinimaContent');
+
+							} catch(err) {
+								console.log("Response received is not JSON");
+							}
+						} else if (xhr.status == 404) {
+							console.log("Request could not be processed");
+						}
+					}
+				}
+				
+				xhr.open('GET',
+					 "https://www.googleapis.com/youtube/v3/playlistItems?playlistId=PLxROszFPI_5NwVfGgvcQKS01REhSn-D26&part=snippet&maxResults=25&key=AIzaSyAZFp6zixMQ0bbf0o0Sj7c0fH6xAEkumIw&", true);
+				xhr.send();
 			});
 			
 			$(document).ready(function() {	
 				// Before website is fully ready
-				$(window).trigger('createPlaylists');
+				$(window).trigger('createLpsPlaylist');
+				$(window).trigger('createOneOffsPlaylist');
+				//$(window).trigger('createExtrasPlaylist');
+				$(window).trigger('createMachinimaPlaylist');
 				
 				// Activate overflow-y for content 
 				jQuery(function($) {
 					$(".sbfp-lps").bind("scroll", function() {
-						//alert($(this)[0].scrollHeight);
 						if ($(this).scrollTop() + $(this).innerHeight() + 1 >= $(this)[0].scrollHeight) {
 							console.log("End of LPs content reached");
 							for (i=0; i<4; i++) {
 								$(".lps-grid-image-box:nth-child("+lpsGridImageNum+")").css("display", "inline");
 								++lpsGridImageNum;
+							}
+						}
+					});
+					$(".sbfp-one-offs").bind("scroll", function() {
+						if ($(this).scrollTop() + $(this).innerHeight() + 1 >= $(this)[0].scrollHeight) {
+							console.log("End of one-offs content reached");
+							for (i=0; i<4; i++) {
+								$(".one-offs-grid-image-box:nth-child("+oneOffsGridImageNum+")").css("display", "inline");
+								++oneOffsGridImageNum;
+							}
+						}
+					});
+					$(".sbfp-machinima").bind("scroll", function() {
+						if ($(this).scrollTop() + $(this).innerHeight() + 1 >= $(this)[0].scrollHeight) {
+							console.log("End of one-offs content reached");
+							for (i=0; i<4; i++) {
+								$(".machinima-grid-image-box:nth-child("+machinimaGridImageNum+")").css("display", "inline");
+								++machinimaGridImageNum;
 							}
 						}
 					});
@@ -643,7 +699,7 @@
 						$("#links").removeClass("active");
 						$("#links").css("color", "#e5e5e5");
 						$(".sbfp-newest-uploaded").css("z-index", "0");
-
+						
 						var elem = $(".sbfp-links:visible").length ? $(".sbfp-links:visible") : $(".sbfp-links:first");
 						$(".sbfp-links").slideUp("fast");
 					}
@@ -664,6 +720,19 @@
 				});
 				$("#links").click(function() {
 					toggleLinks();	
+				});
+				$("#navbar-button").click(function() {
+					if (lpsToggled == true) {
+						toggleLetsPlays();
+					} else if (oneOffsToggled == true) {
+						toggleOneOffs();
+					} else if (extrasToggled == true) {
+						toggleExtras();
+					} else if (machinimaToggled == true) {
+						toggleMachinima();
+					} else if (linksToggled == true) {
+						toggleLinks();
+					}
 				});	
 			});
 		</script>	
